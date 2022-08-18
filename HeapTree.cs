@@ -23,13 +23,13 @@ namespace HeapTree
             }
         }
         
-        public class HeapTree
+        public class Heap
         {
             private Node Root { get; set; }
             private Node LastNode { get; set; }
             private Node InsertionNode { get; set; } 
             public int Size { get; set; }
-            public HeapTree(int rootKey, object rootElement)
+            public Heap(int rootKey, object rootElement)
             {
                 Root = new Node(rootKey, rootElement, null);
                 InsertionNode = Root.LeftChild;
